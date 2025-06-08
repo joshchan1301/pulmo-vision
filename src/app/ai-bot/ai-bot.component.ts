@@ -126,7 +126,7 @@ export class AiBotComponent implements AfterViewInit {
     this.loading = true;
     this.scrollToBottom();
 
-    this.http.post<any>('https://joshchan1301--pulmo-api.hf.space/api/chat', { message: msg }).subscribe({
+    this.http.post<any>('https://pulmo-backend.onrender.com/api/chat', { message: msg }).subscribe({
       next: (res) => {
         this.messages.push({ text: res.reply, from: 'bot' });
         this.loading = false;

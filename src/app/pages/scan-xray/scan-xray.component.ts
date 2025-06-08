@@ -62,7 +62,7 @@ export class ScanXrayComponent {
     this.errorMsg = null;
     this.scanResult = null;
 
-    this.xrayService.analyzeXray(this.selectedFile).subscribe({
+    this.xrayAnalysisService.analyzeXray(this.selectedFile).subscribe({
       next: (res) => {
         // Check nếu không phải X-ray hoặc backend trả về lỗi
         if (res.label === "UNKNOWN" || res.error) {

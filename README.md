@@ -1,59 +1,64 @@
-# PulmoVision
+# Pulmo Vision Frontend 🫁
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+Pulmo Vision is an AI-powered web application designed to assist in the analysis of chest X-ray images.  
+This repository contains the **frontend (Angular)** part of the project, which provides a user-friendly interface for uploading X-ray images and interacting with the Pulmo Vision AI assistant.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Features
+- Upload chest X-ray images for AI analysis.
+- Visualize AI results including:
+  - Predicted label (Normal / Bacterial / Viral).
+  - Confidence score.
+  - Heatmap visualization (Grad-CAM).
+- Integrated chatbot assistant for explaining results in a simple, patient-friendly manner.
+- Responsive UI for desktop and mobile.
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** Angular, TypeScript, HTML, SCSS
+- **Backend API (separate repo):** FastAPI + PyTorch  
+  👉 [Pulmo Vision Backend](https://github.com/joshchan1301/pulmo-vision)
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/joshchan1301/pulmo-vision.git
+cd pulmo-vision
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then visit: **http://localhost:4200**
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🔗 Related Repositories
+- [Pulmo Vision Backend](https://github.com/joshchan1301/pulmo-backend) – AI model inference & API
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📸 Screenshots
+*(Add some demo screenshots here: upload X-ray, chatbot, heatmap overlay, etc.)*
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 👨‍💻 Author
+Pulmo Vision is developed by **Trần Hiếu**, an IT student passionate about AI and healthcare technology.  
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---

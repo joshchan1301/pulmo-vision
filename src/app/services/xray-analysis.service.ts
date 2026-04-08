@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class XrayAnalysisService {
-  private apiUrl = 'https://pulmo-backend.onrender.com/api/analyze-xray'; // Đúng endpoint của backend
+  private apiUrl = 'https://pulmo-backend-production-18a1.up.railway.app/api/analyze-xray'; // Đúng endpoint của backend
 
   constructor(private http: HttpClient) {}
 

@@ -33,7 +33,20 @@
       (click)="menuOpen = false"
       >Lung Diseases</a
     >
-    <button
+    <button 
+      class="navbar__toggle" 
+      (click)="toggleLanguage()" 
+      [attr.aria-label]="isVietnamese ? 'Switch to English' : 'Chuyển sang tiếng Việt'"
+      type="button"
+    >
+      <ng-container *ngIf="isVietnamese; else enTemplate">
+        <span>🇻🇳 VI</span>
+      </ng-container>
+    
+      <ng-template #enTemplate>
+        <span>🇺🇸 EN</span>
+      </ng-template>
+    </button>
       class="navbar__toggle"
       (click)="toggleTheme()"
       aria-label="Toggle dark mode"
